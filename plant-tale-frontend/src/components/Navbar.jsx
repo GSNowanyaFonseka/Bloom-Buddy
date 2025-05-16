@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-content">
         <div className="logo">
-          <div className="logo-text">BloomBuddy</div>
+          <div className="logo-text">Plant Tale</div>
         </div>
         
         <div className="menu-toggle" onClick={toggleMenu}>
