@@ -1,0 +1,80 @@
+/* Import variables */
+@import '../styles/variables.css';
+
+.features-section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.features-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-secondary);
+}
+
+.section-subtitle {
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border: 1px solid rgba(61, 153, 112, 0.1);
+  transition: var(--transition-standard);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.feature-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature-description {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.features-divider {
+  width: 80px;
+  height: 1px;
+  background-color: var(--color-primary);
+  margin: 1rem auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 4rem 0;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,29 @@
+/* Color Variables */
+:root {
+  /* Main Colors */
+  --color-primary: #3D9970;      /* Emerald Green */
+  --color-accent: #FFC0CB;       /* Soft Pink */
+  --color-background: #FAF3E0;   /* Light Ivory */
+  
+  /* Text Colors */
+  --color-text-dark: #333333;    /* Dark Text */
+  --color-text-light: #666666;   /* Light Text */
+  --color-text-white: #FFFFFF;   /* White Text */
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  
+  /* Fonts */
+  --font-primary: 'Times New Roman', Times, serif;
+  --font-secondary: 'Georgia', serif;
+  
+  /* Border */
+  --border-thin: 1px solid var(--color-primary);
+  
+  /* Transition */
+  --transition-standard: all 0.3s ease;
+}

@@ -1,0 +1,153 @@
+/* Import variables */
+@import '../styles/variables.css';
+
+.navbar {
+  padding: 1.5rem 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  border-bottom: 1px solid rgba(61, 153, 112, 0.1);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  font-family: var(--font-secondary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 1.2rem;
+  padding: 0.5rem 0;
+  color: var(--color-text-dark);
+  position: relative;
+  letter-spacing: 1px;
+  transition: var(--transition-standard);
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: var(--transition-standard);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-button {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  transition: var(--transition-standard);
+}
+
+.login-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.signup-button {
+  color: white;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem 1.5rem;
+  transition: var(--transition-standard);
+}
+
+.signup-button:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    display: none;
+    padding: 1rem 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+  
+  .nav-buttons {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .login-button, .signup-button {
+    width: 100%;
+    text-align: center;
+    margin: 0.3rem 0;
+  }
+}
