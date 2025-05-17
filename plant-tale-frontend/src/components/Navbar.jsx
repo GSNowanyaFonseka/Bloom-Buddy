@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import logo from '../assets/1.png'; 
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-content">
         <div className="logo">
-          <div className="logo-text">Plant Tale</div>
+          <img src={logo} alt="logo"/>
         </div>
         
         <div className="menu-toggle" onClick={toggleMenu}>
