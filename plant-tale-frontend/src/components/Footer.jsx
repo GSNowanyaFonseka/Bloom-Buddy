@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-column">
             <div className="footer-logo">
-              <div className="footer-logo-text">BloomBuddy</div>
+              <div className="footer-logo-text">Plant Tale</div>
             </div>
             <p className="footer-description">
-              BloomBuddy is a smart flower care companion that helps you identify plants, 
+              Plant Tale is a smart flower care companion that helps you identify plants, 
               provides personalized care instructions, and sends timely reminders to keep 
               your plants thriving and beautiful.
             </p>

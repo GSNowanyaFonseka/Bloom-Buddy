@@ -2,8 +2,7 @@
 @import '../styles/variables.css';
 
 .hero-section {
-  padding: 8rem 0 6rem;
-  padding-top: 11rem;
+  padding: 120px;
   background-color: var(--color-background);
   position: relative;
   overflow: hidden;

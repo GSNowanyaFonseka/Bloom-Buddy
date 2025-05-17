@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/1.png'; 
+import logo from '../assets/logo.png'; 
 import './Navbar.css';
 
 const Navbar = () => {
@@ -24,9 +24,9 @@ const Navbar = () => {
         
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <a href="#home" className="nav-link">Home</a>
-          <a href="#features" className="nav-link">Features</a>
           <a href="#services" className="nav-link">Services</a>
-          <a href="#about" className="nav-link">About</a>
+          <a href="#features" className="nav-link">Features</a>
+          
           
           <div className="nav-buttons">
             <button className="login-button">Login</button>

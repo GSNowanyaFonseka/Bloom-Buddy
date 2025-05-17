@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import Service from './components/Service';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <div className="main-content">
         <HeroSection />
+        <Service/>
         <Features />
         {/* Add more sections as needed */}
       </div>
