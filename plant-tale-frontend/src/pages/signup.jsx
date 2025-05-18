@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Login.css"; // Reusing the same CSS file
 import { FaEnvelope, FaLock, FaUser, FaGoogle, FaFacebook } from 'react-icons/fa';
 import { PiPlantFill } from 'react-icons/pi';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 
 const Signup = () => {
   const [form, setForm] = useState({
@@ -101,7 +102,7 @@ const Signup = () => {
     <div className="auth-container">
       <div className="auth-card signup-card">
         <div className="auth-header">
-          <PiPlantFill className="auth-icon" />
+          <img src={logo} alt="logo"></img>
           <h2>Join Plant Tale</h2>
           <p className="auth-subtitle">Let your garden bloom beautifully with intelligent care!</p>
         </div>

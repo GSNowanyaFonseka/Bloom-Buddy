@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 import { FaEnvelope, FaLock, FaGoogle, FaFacebook } from 'react-icons/fa';
 import { PiPlantFill } from 'react-icons/pi';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -36,7 +37,7 @@ const Login = () => {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
-          <PiPlantFill className="auth-icon" />
+          <img src={logo} alt="logo"></img>
           <h2>Welcome back to Plant Tale!</h2>
           <p className="auth-subtitle">Let's take care of your garden together.</p>
         </div>

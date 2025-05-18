@@ -9,8 +9,6 @@
   --success-color: #2ecc71;
   --border-color: #dddddd;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --green-light: #86c7a1;
-  --green-dark: #2a7755;
 }
 
 .auth-container {
@@ -19,7 +17,7 @@
   align-items: center;
   min-height: 80vh;
   padding: 2rem 1rem;
-  background-color: #FAF3E0;
+  background-color: var(--background-color);
 }
 
 .auth-card {
