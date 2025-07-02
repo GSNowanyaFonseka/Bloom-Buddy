@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 import { Link } from "react-router-dom";
-import "./Login.css";
+import "./login.css";
 import { FaEnvelope, FaLock, FaGoogle, FaFacebook } from 'react-icons/fa';
 import { PiPlantFill } from 'react-icons/pi';
 import logo from '../assets/logo.png'; // Adjust the path as necessary
